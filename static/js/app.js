@@ -45,6 +45,11 @@ function handleClick(){
     let state_filter = d3.select("#state").property('value');
     let country_filter = d3.select("#country").property('value');
     let shape_filter = d3.select("#shape").property('value');
+    d3.select("#datetime").node().value = "";
+    d3.select("#city").node().value = "";
+    d3.select("#state").node().value = "";
+    d3.select("#country").node().value = "";
+    d3.select("#shape").node().value = "";
   
 
   var filtered = tableData.filter(item =>{
